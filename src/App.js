@@ -37,10 +37,12 @@ export default function App() {
   }
   function handleFocus() {
     document.querySelector('.question-text').style.color = '#252d4a';
+    document.querySelector('.question-text').style.fontWeight = 'bold';
   }
 
   function handleNoFocus() {
     document.querySelector('.question-text').style.color = 'white';
+    document.querySelector('.question-text').style.fontWeight = 'normal';
   }
 
   return (
