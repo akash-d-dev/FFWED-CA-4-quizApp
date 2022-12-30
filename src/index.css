@@ -127,7 +127,7 @@ button {
   display: flex;
   padding: 7px;
   padding-left: 25px;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   border: 5px solid #314d69;
