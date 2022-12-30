@@ -65,7 +65,7 @@ export default function App() {
               </button>
             </div>
             <div className="question-text">
-              {questions[currentQuestion].questionText}
+               ◈ {questions[currentQuestion].questionText}
             </div>
           </div>
           {/* map the quetion array */}
