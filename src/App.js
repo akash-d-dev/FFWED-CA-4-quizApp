@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import questions from './questions';
 import Result from './components/Result';
 
@@ -35,6 +35,10 @@ export default function App() {
       backgroundColor: color ? '#6da7d3' : '#6da7d3',
     };
   }
+  useEffect(() => {
+    setThemeName(themeName === 'Light' ? 'Dark' : 'Light');
+  }, [theme]);
+
   function handleFocus() {
     document.querySelector('.question-text').style.color = '#252d4a';
     document.querySelector('.question-text').style.fontWeight = 'bold';
@@ -63,7 +67,7 @@ export default function App() {
                 Question {currentQuestion + 1}/{questions.length}
               </div>
               <button className="theme" onClick={handleToggle}>
-                Theme
+                 {themeName}
               </button>
             </div>
             <div className="question-text">
