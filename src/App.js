@@ -7,6 +7,7 @@ export default function App() {
   const [showScore, setShowScore] = useState(false);
   const [score, setScore] = useState(0);
   const [theme, setTheme] = useState(true);
+  const [themeName, setThemeName] = useState("dark")
 
   const handleAnswerOptionClick = isCorrect => {
     if (isCorrect) setScore(score + 1);
