@@ -38,6 +38,7 @@ export default function App() {
   }
   useEffect(() => {
     setThemeName(themeName === 'Light' ? 'Dark' : 'Light');
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [theme]);
 
   function handleFocus() {
